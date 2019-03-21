@@ -1,36 +1,29 @@
-#include "stdafx.h"
 #include <iostream>
 #include <string>
-#include <vector>
+#include <math.h>
 
 using namespace std;
 
-bool isPrime(int num)
-{
-	for (int i = 2; i <= sqrt(num); i++)
-	{
-		if (num % i == 0)
+bool isPrime(int n) {
+	for (int i = 2; i <= sqrt(n); i++) {
+		if (n%i == 0) 
 			return false;
 	}
-	return !(num == 1);
+	return !(n==1);
 }
-int main() {
-	int amt; cin >> amt;
-	vector<vector<int>> nums;
-	for (int i = 0; i < amt; i++)
-	{
-		vector<int> sub; int a, b;
-		cin >> a >> b;
-		sub.push_back(a); sub.push_back(b);
-		nums.push_back(sub);
-	}
-	for (vector<int> temp : nums)
-	{
-		for (int x= temp.at(0); x <= temp.at(1); x++)
-		{
-			if (isPrime(x))
-				cout << x << "\n";
-		}
-		cout << "\n";
-	}
+int main(){
+  int n;
+  cin >> n;
+  for(int i=0;i<n;i++){
+    int n1;
+    int n2;
+    cin >> n1;
+    cin >> n2;
+    for(int j=n1;j<=n2;j++){
+      if(isPrime(j)){
+        cout << j << endl;
+      }
+    }
+    cout << endl;
+  }
 }
