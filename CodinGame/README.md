@@ -1,0 +1,1 @@
+So... These problems are not openly accessible, and most of them are reallly easy. Because of that I will only add code that was either hard or interesting.
