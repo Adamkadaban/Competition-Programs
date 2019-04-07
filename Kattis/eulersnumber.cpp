@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 double fact(int n){
-  double prod=1.0000;
+  double prod=1.00000;
   for(int i=2;i<=n;i++){
     prod*=i;
   }
