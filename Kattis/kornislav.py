@@ -1,0 +1,5 @@
+nums=list(map(int, input().split()))
+nums=sorted(nums)
+x=min(nums[:2])
+y=min(nums[2:])
+print(x*y)
