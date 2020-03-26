@@ -11,8 +11,7 @@ def bubbleSort(x):
         isSorted=False
     l-=1
   return c
-def getAns(arr):
-  pass
+
 n=int(input())
 for i in range(n):
   nums=list(map(int, input().split()))
